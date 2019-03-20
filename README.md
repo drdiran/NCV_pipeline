@@ -1,8 +1,8 @@
 # NCV_pipeline
-###################################################
-## README file for non-coding variant pipeline#####
-## Developer: Oyediran Akinrinade##################
-###################################################
+###########################################################
+## README file for non-coding variant pipeline        #####
+## Developer: Oyediran Akinrinade                     #####
+###########################################################
 
 The pipeline has five components
 - 1. NCV_pipeline_v1.sh - qsub (or NCV_pipeline_v1_Interactive_Bash.sh for interactive runs)
@@ -17,12 +17,12 @@ The pipelines are to be run sequentially:
  updates dbsnp ID, annotates with vep/92, filters for SNVs overlapping known Ensembl Regulatory Features,
  and generates a bunch of files: vcf, txt and, bed files, needed for the other scripts.
 
- # How to run NCV_pipeline_v1.sh:
+# How to run NCV_pipeline_v1.sh:
 
  bash path_to_Script/NCV_pipeline_v1.sh - a fileName.vcf.gz
 
  - The above command submits the job to the cluster and generates the following outputs (required for next steps):
- # output files from NCV_pipeline_v1.sh
+# output files from NCV_pipeline_v1.sh
  - fileName_vep92_gnomADgenome.vcf (needed for DeepSEA_pipeline.sh)
  - fileName_vep92_gnomADgenome_Regulatory_SNVs_RegDB_Input.txt (needed for RegulomeDB_Query_Pipeline.R)
  - fileName_vep92_gnomADgenome_Regulatory_SNVs_MotifbreakR_Input.bed (needed for motifBreakR_pipeline.R)
