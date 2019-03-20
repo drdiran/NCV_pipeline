@@ -48,7 +48,9 @@ Ten files are written to ./DeepSEA_Result directory and the outputs are needed i
 
 ##############################################################################
 module load R/3.4.3
-Rscript path_to_Script/RegulomeDB_Query_Pipeline.R -r fileName_vep92_gnomADgenome_Regulatory_SNVs_RegDB_Input.txt
+
+Rscript path_to_Script/RegulomeDB_Query_Pipeline.R \
+-r fileName_vep92_gnomADgenome_Regulatory_SNVs_RegDB_Input.txt
 
 This should generate the two files above
 #############################################################################
